@@ -17,27 +17,32 @@ const Topbar = ({ isScrolled }) => {
         <ul className="hidden md:flex gap-5">
           <li>
             <a className="hover:text-gray-200" href="#">
-              Jobs
+              Research
             </a>
           </li>
           <li>
             <a className="hover:text-gray-200" href="#">
-              Calendar
+              Conference
             </a>
           </li>
           <li>
             <a className="hover:text-gray-200" href="#">
-              Tenders
+              Lakshya22
             </a>
           </li>
           <li>
             <a className="hover:text-gray-200" href="#">
-              Payment Gateway
+              SPOJ
             </a>
           </li>
           <li>
             <a className="hover:text-gray-200" href="#">
-              Recruiters
+              BITRPHARMA
+            </a>
+          </li>
+          <li>
+            <a className="hover:text-gray-200" href="#">
+              ERP CCSMA LOGIN
             </a>
           </li>
         </ul>
@@ -45,17 +50,17 @@ const Topbar = ({ isScrolled }) => {
         <ul className="flex md:hidden gap-5 ">
           <li>
             <a className="hover:text-gray-200" href="#">
-              Jobs
+              Research
             </a>
           </li>
           <li>
             <a className="hover:text-gray-200" href="#">
-              Calendar
+              Conference
             </a>
           </li>
           <li>
             <a className="hover:text-gray-200" href="#">
-              Tenders
+              Lakshya22
             </a>
           </li>
         </ul>

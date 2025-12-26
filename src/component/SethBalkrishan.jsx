@@ -40,7 +40,7 @@ const SethBalkrishan = () => {
                     Late Seth Balkrishan
                   </h3>
                   <p className="text-gray-600 font-medium mt-1">
-                    Founding Patron
+                    Founder of BIT
                   </p>
                   <div className="w-16 h-0.5 bg-blue-600 mx-auto mt-2"></div>
                 </motion.div>
@@ -57,7 +57,7 @@ const SethBalkrishan = () => {
             >
               <div className="mb-4">
                 <h2 className="text-2xl font-bold text-gray-900 mb-3">
-                  Legacy of Our Founding Patron
+                  Legacy of Our Founding
                 </h2>
 
                 <motion.div
@@ -88,8 +88,8 @@ const SethBalkrishan = () => {
 
                   <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-600 my-4">
                     <p className="text-gray-800 italic">
-                      "His enlightened vision stands as a beacon, guiding future
-                      generations toward excellence and service to society."
+                      "No Step is lost. Every movement is gain. Every effort is
+                      the struggle and will be counted as merit"
                     </p>
                   </div>
 
@@ -104,7 +104,7 @@ const SethBalkrishan = () => {
               </div>
 
               {/* CONTRIBUTIONS */}
-              <motion.div
+              {/* <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
@@ -128,7 +128,7 @@ const SethBalkrishan = () => {
                     Spiritual Growth
                   </span>
                 </div>
-              </motion.div>
+              </motion.div> */}
             </motion.div>
           </div>
         </div>

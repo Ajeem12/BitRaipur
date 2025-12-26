@@ -14,9 +14,7 @@ const Media = () => {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl font-bold text-gray-900 mb-3">
-            Campus Media
-          </h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-3">Media</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Stay updated with college news, events, and campus activities
           </p>
@@ -121,7 +119,7 @@ const Media = () => {
         </div>
 
         {/* QUICK LINKS */}
-        <motion.div
+        {/* <motion.div
           className="bg-white rounded-lg shadow-sm p-6 border border-gray-200"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -140,10 +138,10 @@ const Media = () => {
               Media Contact
             </button>
           </div>
-        </motion.div>
+        </motion.div> */}
 
         {/* NEWSLETTER */}
-        <motion.div
+        {/* <motion.div
           className="bg-blue-50 rounded-lg p-6 mt-8 border border-blue-200"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -164,7 +162,7 @@ const Media = () => {
               Subscribe
             </button>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

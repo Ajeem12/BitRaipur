@@ -142,7 +142,7 @@ const Gallery = () => {
 
         {/* Search and Filter Section */}
         <div className="bg-white rounded-lg shadow-sm p-4 md:p-6 mb-8">
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+          {/* <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
             <div className="flex-1 relative">
               <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400">
                 <FaSearch />
@@ -157,7 +157,7 @@ const Gallery = () => {
               <FaFilter className="text-gray-500" />
               <span className="text-gray-600 font-medium">Filter by:</span>
             </div>
-          </div>
+          </div> */}
 
           {/* Category Filters */}
           <div className="flex flex-wrap gap-2 mb-6">
@@ -190,7 +190,7 @@ const Gallery = () => {
         </div>
 
         {/* Featured Events */}
-        <div className="mb-10">
+        {/* <div className="mb-10">
           <h2 className="text-xl font-bold text-gray-900 mb-4">
             Featured Events
           </h2>
@@ -218,7 +218,7 @@ const Gallery = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Photo Gallery */}
         <div className="mb-10">
@@ -269,7 +269,7 @@ const Gallery = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="bg-blue-50 rounded-lg p-6 md:p-8 border border-blue-200 text-center">
+        {/* <div className="bg-blue-50 rounded-lg p-6 md:p-8 border border-blue-200 text-center">
           <h3 className="text-xl font-bold text-gray-900 mb-3">
             Contribute to Our Gallery
           </h3>
@@ -285,7 +285,7 @@ const Gallery = () => {
               View All Albums
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

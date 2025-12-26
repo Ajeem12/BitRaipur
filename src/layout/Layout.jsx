@@ -6,7 +6,7 @@ const Layout = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       {/* push page content below fixed bars */}
-      <main className="flex-1 pt-[120px]">
+      <main className="flex-1 ">
         <Outlet />
       </main>
     </div>
