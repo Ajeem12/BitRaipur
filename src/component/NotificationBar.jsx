@@ -21,7 +21,7 @@ const NotificationBar = () => {
   };
 
   return (
-    <section className="bg-soft border-y border-border overflow-hidden -mt-2">
+    <section className="bg-soft border-y border-border overflow-x-hidden -mt-2">
       <motion.div
         className="flex gap-5 whitespace-nowrap px-6 py-3"
         animate={{ x: ["100%", "-100%"] }}

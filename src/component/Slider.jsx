@@ -4,11 +4,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const slides = [
+  { image: "/banner/img7.jpg" },
   { image: "/banner/img2.jpg" },
   { image: "/banner/img4.jpg" },
   { image: "/banner/img5.jpg" },
   { image: "/banner/img6.jpg" },
-  { image: "/banner/img7.jpg" },
 ];
 
 const Slider = () => {
@@ -19,7 +19,7 @@ const Slider = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4500,
+    autoplaySpeed: 1500,
     pauseOnHover: true,
     arrows: false,
     fade: true,
@@ -27,14 +27,14 @@ const Slider = () => {
   };
 
   return (
-    <section className="relative w-full -mt-10 sm:-mt-36">
+    <section className="relative w-full -mt-10 sm:-mt-36 ">
       <SliderLib {...settings}>
         {slides.map((slide, idx) => (
           <div key={idx}>
             <div
               className="
                 relative w-full
-                h-[55vh] sm:h-[65vh] md:h-[80vh] lg:h-[90vh]
+                h-[40vh] sm:h-[65vh] md:h-[80vh] lg:h-[90vh]
                 bg-cover bg-center
               "
               style={{ backgroundImage: `url(${slide.image})` }}

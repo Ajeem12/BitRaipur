@@ -52,19 +52,54 @@ const Navbar = () => {
       <header className="sticky top-0 z-50 lg:relative h-10 bg-white sm:bg-transparent ">
         <div className="flex items-center justify-between ">
           <div>
-            <div className="max-w-7xl ml-2  hidden lg:block">
-              <Link to="/">
-                <img src="/tlogo.png" alt="Logo" className="h-22" />
-              </Link>
+            <div className="max-w-8xl ml-2  hidden lg:block ">
+              <div className="flex gap-72">
+                <div>
+                  <Link to="/">
+                    <img src="/logo/tlogo.png" alt="Logo" className="h-22" />
+                  </Link>
+                </div>
+                <div className="flex flex-col gap-1 mt-1">
+                  <button
+                    className="
+      w-full min-w-[220px]
+      px-4 py-2
+      text-sm font-medium
+      rounded-md
+        border-2 borderyellow-300
+      bg-[#3a4c96] text-white
+      hover:bg-[#2f3c78]
+      transition
+    "
+                  >
+                    ERP Engineering Login
+                  </button>
+
+                  <button
+                    className="
+      w-full min-w-[220px]
+      px-4 py-2
+      text-sm font-medium
+      rounded-md
+      border-2 borderyellow-300
+      bg-[#3a4c96] text-white
+      hover:bg-[#2f3c78]
+      transition
+    "
+                  >
+                    ERP Pharmacy Login
+                  </button>
+                </div>
+              </div>
             </div>
             <div className="max-w-7xl ml-2 lg:hidden mt-1">
               <Link to="/">
-                <img src="/mlogo.png" alt="Logo" className="h-7" />
+                <img src="/logo/mlogo.png" alt="Logo" className="h-9" />
               </Link>
             </div>
           </div>
           {/* MOBILE MENU BUTTON */}
-          <div className="mt-1">
+          <div className="mt-1 mr-2">
             <button
               onClick={() => setMobileOpen(true)}
               className={`lg:hidden ${
@@ -97,6 +132,7 @@ const Navbar = () => {
           <div className="flex items-center justify-center h-full">
             <ul className="hidden lg:flex items-center gap-8 font-medium">
               {[
+                "Home",
                 "About",
                 "Admissions",
                 "Departments",
@@ -141,18 +177,33 @@ const Navbar = () => {
       >
         {mobileOpen && (
           <div className="flex items-center justify-between p-4 border-b lg:hidden">
-            <img src="/logo.png" className="h-5" alt="Logo" />
+            <img src="/logo/bottom.png" className="w-40" alt="Logo" />
             <button onClick={() => setMobileOpen(false)}>
               <FiX size={20} />
             </button>
           </div>
         )}
-
-        <ul className="p-5 space-y-4">
-          <MobileItem title="Academics" />
-          <MobileItem title="Research" />
-          <MobileItem title="Campus Life" />
-        </ul>
+        <div className="h-[calc(100vh-64px)] overflow-y-auto">
+          <ul className="p-5 space-y-4 ">
+            {[
+              "Home",
+              "About",
+              "Admissions",
+              "Departments",
+              "Training & Placement",
+              "Campus Life",
+              "Connect",
+            ].map((title) => (
+              <MobileItem
+                key={title}
+                title={title}
+                isScrolled={isStickyActive}
+                openMenu={openMenu}
+                setOpenMenu={setOpenMenu}
+              />
+            ))}
+          </ul>
+        </div>
       </aside>
     </>
   );

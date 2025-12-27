@@ -4,6 +4,7 @@ import { bitRaipurInfoData } from "../data/bitRaipurInfo";
 import { trainingPlacementData } from "../data/trainingPlacement";
 import { campusLife } from "../data/campusLife";
 import { connectsData } from "../data/connect";
+import { FaHome } from "react-icons/fa";
 
 const NavItem = ({ title, isScrolled, openMenu, setOpenMenu }) => {
   let data = null;
@@ -25,6 +26,7 @@ const NavItem = ({ title, isScrolled, openMenu, setOpenMenu }) => {
           isScrolled ? "text-white mt-1" : "text-white"
         } ${isOpen ? "text-blue-600" : ""}`}
       >
+        {title === "Home" && <FaHome className="inline mr-1 mb-1" size={20} />}
         {title}
       </button>
 

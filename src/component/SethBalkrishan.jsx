@@ -3,150 +3,63 @@ import { motion } from "framer-motion";
 
 const SethBalkrishan = () => {
   return (
-    <section className="bg-gray-50 py-12 px-4 md:py-16">
+    <section className="bg-gray-50 py-14 px-4">
       <div className="max-w-6xl mx-auto">
-        <div className="bg-white rounded-lg shadow-md overflow-hidden">
-          <div className="grid grid-cols-1 md:grid-cols-12">
-            {/* IMAGE SECTION */}
-            <motion.div
-              className="md:col-span-4 bg-gray-100 p-6 md:p-8 flex flex-col items-center justify-center"
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-            >
-              <div className="text-center">
-                <motion.div
-                  initial={{ scale: 0.95 }}
-                  whileInView={{ scale: 1 }}
-                  transition={{ duration: 0.4 }}
-                  viewport={{ once: true }}
-                >
-                  <img
-                    src="seth.png"
-                    alt="Seth Balkrishan"
-                    className="w-48 h-56 object-cover rounded-md shadow-md mx-auto"
-                  />
-                </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="bg-white rounded-lg shadow-sm p-6 md:p-10"
+        >
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            {/* IMAGE */}
+            <div className="flex justify-center">
+              <img
+                src="/staf/seth.png"
+                alt="Late Seth Balkrishan"
+                className="w-44 h-56 object-cover rounded-md border border-gray-300"
+              />
+            </div>
 
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  transition={{ delay: 0.2 }}
-                  viewport={{ once: true }}
-                  className="mt-4"
-                >
-                  <h3 className="text-xl font-bold text-gray-900">
-                    Late Seth Balkrishan
-                  </h3>
-                  <p className="text-gray-600 font-medium mt-1">
-                    Founder of BIT
-                  </p>
-                  <div className="w-16 h-0.5 bg-blue-600 mx-auto mt-2"></div>
-                </motion.div>
-              </div>
-            </motion.div>
+            {/* CONTENT */}
+            <div className="md:col-span-2 text-center md:text-left">
+              <h2 className="text-2xl md:text-3xl font-semibold text-[#3a4c96] mb-2">
+                Late Seth Balkrishan
+              </h2>
 
-            {/* CONTENT SECTION */}
-            <motion.div
-              className="md:col-span-8 p-6 md:p-8"
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-            >
-              <div className="mb-4">
-                <h2 className="text-2xl font-bold text-gray-900 mb-3">
-                  Legacy of Our Founding
-                </h2>
+              <p className="text-sm text-gray-600 font-medium mb-4">
+                Founder of Bhilai Institute of Technology
+              </p>
 
-                <motion.div
-                  initial={{ width: 0 }}
-                  whileInView={{ width: "80px" }}
-                  transition={{ duration: 0.6 }}
-                  viewport={{ once: true }}
-                  className="h-1 bg-blue-600 rounded-full mb-4"
-                ></motion.div>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Seth Balkrishan was a visionary philanthropist whose dedication
+                to education laid the foundation of Bhilai Institute of
+                Technology. His life was guided by values of social service,
+                discipline, and commitment to national development.
+              </p>
 
-                <div className="space-y-4">
-                  <p className="text-gray-700 leading-relaxed">
-                    Seth Balkrishan was a distinguished philanthropist whose
-                    vision laid the foundation for Bhilai Institute of
-                    Technology. His commitment to{" "}
-                    <span className="font-medium text-blue-700">education</span>
-                    ,<span className="font-medium text-blue-700"> sports</span>,{" "}
-                    <span className="font-medium text-blue-700">
-                      social welfare
-                    </span>
-                    , and
-                    <span className="font-medium text-blue-700">
-                      {" "}
-                      spiritual values
-                    </span>{" "}
-                    continues to guide our institution's mission.
-                  </p>
-
-                  <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-600 my-4">
-                    <p className="text-gray-800 italic">
-                      "No Step is lost. Every movement is gain. Every effort is
-                      the struggle and will be counted as merit"
-                    </p>
-                  </div>
-
-                  <p className="text-gray-700 leading-relaxed">
-                    Today, as we navigate the challenges of global education,
-                    his ideals remind us to integrate technical knowledge with
-                    human values. The students of BIT are inspired to excel
-                    academically while contributing meaningfully to India's
-                    progress.
-                  </p>
-                </div>
-              </div>
-
-              {/* CONTRIBUTIONS */}
-              {/* <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3 }}
-                viewport={{ once: true }}
-                className="mt-6"
-              >
-                <h4 className="font-bold text-gray-900 mb-3">
-                  Key Contributions
-                </h4>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-md text-sm">
-                    Education
-                  </span>
-                  <span className="px-3 py-1 bg-green-100 text-green-800 rounded-md text-sm">
-                    Sports Development
-                  </span>
-                  <span className="px-3 py-1 bg-purple-100 text-purple-800 rounded-md text-sm">
-                    Social Service
-                  </span>
-                  <span className="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-md text-sm">
-                    Spiritual Growth
-                  </span>
-                </div>
-              </motion.div> */}
-            </motion.div>
+              <p className="text-gray-700 leading-relaxed">
+                His ideals continue to inspire the institution to nurture
+                technically competent graduates who uphold ethical values and
+                contribute positively to society and the nation.
+              </p>
+            </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* FOOTNOTE */}
-        <motion.div
+        <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.4 }}
+          transition={{ delay: 0.3 }}
           viewport={{ once: true }}
-          className="text-center mt-6"
+          className="text-center text-gray-600 text-sm mt-6 max-w-3xl mx-auto"
         >
-          <p className="text-gray-600 text-sm max-w-2xl mx-auto">
-            The values and vision of Seth Balkrishan continue to inspire the BIT
-            community in its pursuit of academic excellence and social
-            responsibility.
-          </p>
-        </motion.div>
+          The legacy of Late Seth Balkrishan remains a guiding force for the BIT
+          community in its pursuit of academic excellence and social
+          responsibility.
+        </motion.p>
       </div>
     </section>
   );
